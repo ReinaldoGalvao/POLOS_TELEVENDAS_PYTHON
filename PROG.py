@@ -15,7 +15,6 @@ with open('b1.txt', 'r', encoding='utf-8') as arquivo:
 
 bairros_limpos = [remover_acentos(bairro.strip().upper()) for bairro in bairros]
 
-# Remover bairros duplicados e ordenar
 bairros_unicos_ordenados = sorted(set(bairros_limpos))
 
 with open('bairros.txt', 'w', encoding='utf-8') as arquivo_saida:
